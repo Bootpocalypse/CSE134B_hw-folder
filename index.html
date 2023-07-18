@@ -1,7 +1,5 @@
 <!doctype html>
-
 <html lang="zxx">
-
 <head>
     <meta charset="UTF-8">
     <title>Banish for cost?</title>
@@ -13,61 +11,180 @@
         }
     </style>
     <link href="images/favicon.ico" rel="icon">
-    <link href="styles/main.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1 id="header">HEADER ONE</h1>
-    </header>
-    <h2>navigation</h2>
+    <h1 id="header">MADE BY MEEEE(David Wang)</h1>
+    <label for="language-select">Choose a language:</label>
+        <select id="language-select">
+            <optgroup label="Supported Languages">
+                <option value="English">English</option>
+            </optgroup>
+            <optgroup label="Unsupported Languages">
+                <option value="Spanish">español</option>
+                <option value="Simplified Chinese">中文</option>
+            </optgroup>
+        </select>
+    <br>
+    <picture>
+        <source media="(min-width:900px)" srcset="images/Me2.jpg">
+        <img src="images/secret.png" alt="Image of Me, David" style="width:auto;">
+    </picture>
     <aside>
+        <h2><em>Navigation</em></h2>
         <nav>
-          <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#problem">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#bio">Biography</a></li>
+                <li><a href="#skills">skills and experience</a></li>
+                <li><a href="#problem">Contact</a></li>
+            </ul>
         </nav>
-      </aside>
+    </aside>
+    </header>
+
+    <hr>
+    <section>
+        <details>
+            <summary><h2><strong>Note:</strong>Song information</h2></summary>
+            <p>Minecraft-wet hands, performed by lonely NASA moon astronauts</p>
+        </details>
+    <audio controls>
+        <source src="audio/Minecraft_Moonbase.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio> 
+    </section>
+    <hr>
+
     <main>
-        <p class="important_info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-        <h3>new part</h3>
-
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>    
-
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </main>
-
-    <iframe src="anothersite.html" height="350" width="350" title="Iframe Example"></iframe>
-    <footer>
+        <h1>Biography? information about myself?</h1>
+        <section id="bio">
+            <h2>Me?</h2>
+                <video width="400" height="240" controls>
+                <source src="videos/videoplayback.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video> 
+            <details> 
+                <summary><strong>Note:</strong>Additional information</summary>
+                <p class="important_info">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </details>
+        </section>
+        <section id="skills">
+            <h2>Academics, skills, etc</h2>
+            <table class="important_info">
+                <caption><h3>Academic career</h3></caption>
+                <colgroup>
+                    <col>
+                    <col span="3">
+                </colgroup>
+                <tr>
+                    <td> </td>
+                    <th scope="col" class="important_info">UCSD</th>
+                    <th scope="col" class="important_info">Education #2</th>
+                    <th scope="col" class="important_info">Education #3</th>
+                </tr>
+                <tr>
+                    <th scope="row" class="important_info">Skill</th>
+                    <td>Cognitive science</td>
+                    <td>Learned about <code>functions</code> and <code>code</code></td>
+                    <td>Learned about <code>functions</code> and <code>code</code></td>
+                </tr>
+              </table> 
+            <h3>Skills</h3>
+            <ol class="important_info">
+                <li>Machine learning data sort methods</li>
+                <li>Painting miniatures</li>
+                <li>Playing video games</li>
+            </ol>
+            <h3>Links to other website stuff i've made</h3>
+                <ul>
+                    <li><a href="anothersite.html">Second website</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+        </section>
         <hr>
-        <h3 id="problem" class="important_info">Have a problem?</h3>
-        <form>
-            <label for="name1">First name:</label><br>
-            <input type="text" id="first-name" name="name1" value="test"><br>
-            <label for="name2">Last name:</label><br>
-            <input type="text" id="last-name" name="name2" value="testt"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="Message" rows="10" cols="100" maxlength="1000" ></textarea><br>
-            <button type="submit" onclick="alert('There is no problem')">Send Message</button>
-        </form> 
+        <div> Experiments
+            <section>
+                <h2>testing SVG</h2>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco                 
+                    <svg x="0" width="120">
+                        <circle cx="25" cy="0" r="25" />
+                        <circle cx="95" cy="0" r="25" />
+                    </svg> 
+                    laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
 
+            </section>
+            <section>
+            <h2>testing Canvas method</h2>
+                <canvas id="canvas_text" width="200" height="30" style="border:1px solid green;">
+                    <script>
+                        var c = document.getElementById("canvas_text");
+                        var ctx = c.getContext("2d");
+                        ctx.font = "15px Wingdings";
+                        ctx.fillText("Sans Undertale", 10, 20);
+                    </script> 
+                </canvas>
+            </section>
 
+            <section>
+            <h2>testing another site iframe</h2>
+
+            <iframe src="anothersite.html" height="350" width="350" title="Iframe Example"></iframe>
+            </section>
+        </div>
+        <hr>
+        <section>
+            <h2 id="problem">Have a <em>PROBLEM?</em></h2>
+            <form>
+                <fieldset>
+                <legend class="important_info">SEND ME A MESSAGE</legend>
+                <label for="name1">First name:</label><br>
+                <input type="text" id="name1" name="first-name"><br>
+                <label for="name2">Last name:</label><br>
+                <input type="text" id="name2" name="last-name"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="Message" rows="10" cols="100" maxlength="1000" ></textarea><br>
+
+                <label for="color-choice">Finally, pick your favorite color</label>
+                <input list="colors" id="color-choice" name="color-choice">
+                
+                <datalist id="colors">
+                    <option value="Blue">
+                    <option value="Dark Blue">
+                    <option value="Light Blue">
+                    <option value="red(ugly)">
+                </datalist>
+                <br>
+                <button type="submit">Send Message</button>
+                </fieldset>
+            </form> 
+        </section>    
+    </main>
+    <hr>
+    <footer>
+        <section>
+            <h2>Footer</h2>
+        <p><a href="https://github.com/Bootpocalypse"><img src="images/github-mark.png" alt="Github logo, click to go to github" style="width:50px;height:50px;"></a></p>
+        <nav>
+            <a href="#header">Back to top</a>
+        </nav>
+        <template>
+            <h2>Secret!! I'm not sure what we're supposed to do with the template tag right now, as we have to use the script tag to see it right?</h2>
+            <img src="images/secret.png" style="width:auto;">
+        </template>
+        </section>
     </footer> 
 </body>
-
 </html>
-
-<!--link, script*, section, div, span, b, i, strong, em, code, picture, iframe, audio, video, source, canvas*, svg*, ol, optgroup, fieldset, legend, datalist, select, option, details, summary, template, table, tr, td, th, caption, col, colgroup, figure, figcaption-->
